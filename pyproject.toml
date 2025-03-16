@@ -1,0 +1,24 @@
+[project]
+name = "dvrd_ratelimit"
+version = "0.0.1"
+description = "Python rate limiter"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Dave van Rijn Development", email = "develop@davevanrijn.nl" }]
+
+[project.urls]
+Homepage = "https://github.com/Dave-van-Rijn-Development/rate-limiter"
+
+[project.optional-dependencies]
+dev = [
+    "coverage"
+]
+
+[tool.coverage.run]
+omit = [
+    '*/tests/*'
+]
+
+[build-system]
+requires = ["setuptools>=62.6"]
+build-backend = "setuptools.build_meta"
